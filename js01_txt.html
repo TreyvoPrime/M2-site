@@ -8,8 +8,8 @@
 
       Tinley Xeriscapes
       Plants web page
-      Author: 
-      Date:   
+      Author: Treyvon Pearson
+      Date: 1/16/26  
 
       Filename: js01.html
    -->
@@ -19,6 +19,7 @@
    <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="tinleyhand.css" />
    <link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="tinley.css" />
    <link href="http://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet" type="text/css">
+   <script src="js01b.js" def></script>
 </head>
 
 <body>
@@ -43,16 +44,32 @@
         
       <aside>
          <ul>
-            <li id="blanket">Blanket Flower</li>
-            <li id="rugosa">Hedge Rose</li>
-            <li id="bluestem">Little Bluestem</li>
+            <li onclick="document.getElementById('plantImg').src = blanket" id="blanket">Blanket</li>
+            <li onclick="document.getElementById('plantImg').src = rugosa" id="rugosa">Hedge Rose</li>
+            <li onclick="document.getElementById('plantImg').src = bluestem" id="bluestem">Little Bluestem</li>
+            
+
          </ul>
       </aside>
     
       <article>   
          <figure>
             <img src="#" alt="" title="" id="plantImg" />         
-            <figcaption id="imgCaption">            
+            <figcaption id="imgCaption">
+            <script>
+               /*
+               Infomation on available plants
+               including link to USDA website
+               */
+               document.write("<p>Plant choices for");
+               document.write("<a href='http://planthardiness.ars.usda.gov'>");
+               document.write("hardiness zones</a>");
+               document.write(" 5a - 6b </p>"); // hardiness zones for Chicago and surrounding area 
+            // define variables containing plant file names
+               let blanket = "blanket.jpg";
+               let bluestem = "bluestem.jpg";
+               let rugosa = "rugosa.jpg";
+            </script>            
             </figcaption>
          </figure>       
       </article>
@@ -60,6 +77,7 @@
       <footer>
          <p>Tinley Xeriscapes &bull; Tinley Park, IL 60477</p>
       </footer>
+    
    </div>
 </body>
 </html>

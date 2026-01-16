@@ -3,14 +3,14 @@
     Chapter case
 
     Tinley Xeriscapes
-    Author: 
-    Date:   
+    Author: Treyvon Pearson
+    Date: 1/16/26   
 
     Filename: js01b.js
 */
 
 //define variables containing plant filenames
-let blanket = "blanket.jpg";
+let blanket = "blanket2.jpg";
 let rugosa = "rugosa.jpg";
 let bluestem = "bluestem.jpg";
 
